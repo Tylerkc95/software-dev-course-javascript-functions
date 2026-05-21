@@ -72,3 +72,59 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// Script 1 - Greeting multiple users
+
+function greet(names) {
+   for (let i = 0; i < names.length; i++) {
+      console.log("Welcome, "+names[i]+"!");
+   }
+}
+
+greet (names) // The variable "names" has already been declared above.
+
+// Script 2 - Sum calculation
+
+function printSum (num1,num2) {
+   let sum = num1 + num2;
+console.log("The sum of "+num1+" and "+num2+" is " + sum);
+}
+
+printSum(5,10)
+
+// OR
+
+function calculateSum (num1,num2) {
+   let sum = num1 + num2;
+   return sum
+}
+console.log("The sum of 5 and 10 is " + calculateSum(5,10))
+
+
+// Script 3 - Product calculation
+
+function printProduct (num1,num2) {
+   let product = num1 * num2;
+console.log("The product of "+num1+" and "+num2+" is " + product);
+}
+
+printProduct(5,10)
+
+// OR
+
+function calculateProduct (num1,num2) {
+   let product = num1 * num2;
+   return product
+}
+console.log("The product of 5 and 10 is " + calculateProduct(5,10))
+
+// Script 4 - Print names from a list
+
+function printNames(names) {
+   console.log("Names in the list:");
+   for (let i = 0; i < names.length; i++) {
+      console.log(names[i]);
+   }
+}
+
+printNames(names)
